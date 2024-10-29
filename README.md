@@ -1,5 +1,3 @@
-Aquí tienes el código para copiar directamente en tu archivo `README.md`:
-
 ```markdown
 # Switchcom - Proyecto Laravel
 
