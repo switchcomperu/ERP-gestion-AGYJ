@@ -110,4 +110,96 @@ npm run dev
 
 ## Acceso al Proyecto
 Puedes acceder a la aplicación en tu navegador en [http://localhost:8000](http://localhost:8000).
+
+## Estructura de Archivos
+
+```plaintext
+├── 📁 Admin
+    ├── 📁 app
+    ├── 📁 bootstrap
+    ├── 📁 config
+    ├── 📁 database
+    ├── 📁 plugins
+    ├── 📁 public
+    ├── 📁 resources
+    |    ├── 📁 css
+    |    ├── 📁 fonts
+    |    ├── 📁 images
+    |    ├── 📁 js
+    |    └── 📁 views
+    |        ├── 📁 auth
+    |        ├── 📁 components
+    |        ├── 📁 layouts
+    |        ├── 📁 profile
+    |        └── 📄 All other blade files.
+    ├── 📁 routes
+    ├── 📁 storage
+    ├── 📁 test
+    ├── 📄 .editorconfig
+    ├── 📄 .env
+    ├── 📄 .env.example
+    ├── 📄 artisan
+    ├── 📄 composer.json
+    ├── 📄 package.json
+    ├── 📄 postcss.config.js
+    ├── 📄 README.md
+    ├── 📄 tailwind.config.js
+    └── 📄 vite.config.js
 ```
+
+## Diseño
+
+El directorio `layouts` cubre todas las configuraciones del tema. Para aplicarlas manualmente:
+
+- **Creative**: Configura agregando `<body class="">`
+- **Detached**: Configura agregando `<body class="detached detached-simple">`
+
+## CSS
+
+Switchcom utiliza CSS moderno para mejorar el rendimiento y diseño visual.
+
+| Nombre de archivo              | Detalles                     |
+| ------------------------------ | ---------------------------- |
+| `css/style.css`                | Tailwind CSS                 |
+| `css/swiper-bundle.min.css`    | Swiper CSS                   |
+| `css/fancybox.css`             | Fancybox CSS                 |
+| `css/accordion.min.css`        | Accordion CSS                |
+
+## JavaScript
+
+Switchcom usa JavaScript para interacción avanzada.
+
+| Nombre de archivo              | Detalles                     |
+| ------------------------------ | ---------------------------- |
+| `js/alpine.min.js`             | Alpine.js                    |
+| `js/swiper-bundle.min.js`      | Swiper JS                    |
+| `js/apexcharts.js`             | ApexCharts JS                |
+| `js/fancybox.umd.js`           | Fancybox JS                  |
+| `js/custom.js`                 | JavaScript personalizado     |
+
+## Créditos y Recursos
+
+Switchcom utiliza los siguientes plugins y recursos:
+
+- Laravel 11
+- Tailwind CSS
+- Alpine JS
+- Vite
+- Breeze
+- Fancybox
+- Remix Icons
+- ApexCharts JS
+- Unsplash (Imágenes)
+- Swiper JS
+- Accordion JS
+- Faces UI
+- Dribble
+
+## Apoyo
+
+Gracias por formar parte de nosotros. Si tienes alguna consulta, sugerencia o comentario, no dudes en contactarnos.
+
+- 📧 **Correo**: javickms@gmail.com
+```
+
+Este `README.md` proporciona una guía detallada y bien estructurada para la configuración y los detalles técnicos de tu proyecto Laravel.

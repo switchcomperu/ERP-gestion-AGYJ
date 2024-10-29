@@ -9,7 +9,7 @@
     <meta name="author" content="SRBThemes" />
 
     <!-- Site Tiltle -->
-    <title>@yield('title') | Sliced - Laravel 11 & Tailwind CSS Admin & Dashboard Template</title>
+    <title>@yield('title') | Gestion AGyJ SAC Sistema ERP de proyectos</title>
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
