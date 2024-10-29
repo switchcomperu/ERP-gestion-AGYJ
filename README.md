@@ -1,66 +1,116 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Aquí tienes el código para copiar directamente en tu archivo `README.md`:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+```markdown
+# Switchcom - Proyecto Laravel
 
-## About Laravel
+Switchcom es una aplicación desarrollada con Laravel que funciona escaneando todos los archivos Blade, componentes de Laravel y otras plantillas en busca de nombres de clase, generando los estilos correspondientes y escribiéndolos en un archivo CSS estático. Sigue los pasos a continuación para la instalación y configuración de esta aplicación.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Requisitos Previos
+- **PHP**: >=8.2
+- **Composer**: >=2.2
+- **Node.js**: >=20
+- **Servidor Local**: XAMPP, WAMP o LAMP
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalación
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Paso 1: Instalación del Servidor
+Asegúrate de tener un servidor local (XAMPP, WAMP o LAMP) en tu computadora y que esté configurado para PHP >= 8.2.
 
-## Learning Laravel
+### Paso 2: Instalación de Composer
+Verifica que tienes Composer instalado. Si no lo tienes, descárgalo desde [getcomposer.org](https://getcomposer.org).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Paso 3: Instalación de Node.js
+Instala Node.js >= 20 desde [nodejs.org](https://nodejs.org).
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Paso 4: Instalar dependencias de Composer
+Desde la raíz del proyecto, ejecuta:
+```bash
+composer install
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Paso 5: Instalar dependencias de Node
+Ejecuta el siguiente comando para instalar las dependencias de Node.js:
+```bash
+npm install
+```
 
-## Laravel Sponsors
+### Paso 6: Generar la clave de la aplicación
+Genera una clave única para la aplicación:
+```bash
+php artisan key:generate
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Paso 7: Vincular el almacenamiento
+Crea un enlace simbólico entre el almacenamiento y la aplicación:
+```bash
+php artisan storage:link
+```
 
-### Premium Partners
+### Paso 8: Configuración de la Base de Datos
+Edita el archivo `.env` para agregar las credenciales de tu base de datos:
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nombre_base_datos
+DB_USERNAME=usuario
+DB_PASSWORD=contraseña
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Paso 9: Configuración del Correo Electrónico
+Completa las credenciales de correo en el archivo `.env`:
+```dotenv
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USERNAME=usuario@example.com
+MAIL_PASSWORD=contraseña
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="Switchcom"
+```
 
-## Contributing
+### Paso 10: Compilar los recursos
+Genera archivos de producción CSS y JavaScript:
+```bash
+npm run build
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Paso 11: Limpiar la caché de la aplicación
+Borra toda la caché de la aplicación:
+```bash
+php artisan optimize:clear
+```
 
-## Code of Conduct
+### Paso 12: Migraciones de la Base de Datos
+Ejecuta las migraciones para crear las tablas en la base de datos:
+```bash
+php artisan migrate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Paso 13: Poblar la Base de Datos
+Llena la base de datos con datos iniciales:
+```bash
+php artisan db:seed
+```
 
-## Security Vulnerabilities
+### Paso 14: Iniciar el servidor de desarrollo
+Levanta el servidor local en el puerto 8000:
+```bash
+php artisan serve
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Para iniciar en otro puerto, por ejemplo, 8001:
+```bash
+php artisan serve --port=8001
+```
 
-## License
+### Paso 15: Desarrollo en tiempo real
+Para monitorear y compilar cambios en tiempo real, ejecuta:
+```bash
+npm run dev
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Acceso al Proyecto
+Puedes acceder a la aplicación en tu navegador en [http://localhost:8000](http://localhost:8000).
+```
