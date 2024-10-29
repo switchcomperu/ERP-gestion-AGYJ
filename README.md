@@ -1,4 +1,3 @@
-```markdown
 # Switchcom - Proyecto Laravel
 
 Switchcom es una aplicación desarrollada con Laravel que funciona escaneando todos los archivos Blade, componentes de Laravel y otras plantillas en busca de nombres de clase, generando los estilos correspondientes y escribiéndolos en un archivo CSS estático. Sigue los pasos a continuación para la instalación y configuración de esta aplicación.
