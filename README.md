@@ -200,6 +200,67 @@ Switchcom utiliza los siguientes plugins y recursos:
 Gracias por formar parte de nosotros. Si tienes alguna consulta, sugerencia o comentario, no dudes en contactarnos.
 
 - 📧 **Correo**: javickms@gmail.com
-```
 
-Este `README.md` proporciona una guía detallada y bien estructurada para la configuración y los detalles técnicos de tu proyecto Laravel.
+
+# ACERCA DEL PROYECTO
+
+### 1. **Descripción del Proyecto**
+   - ## Objetivo
+    Switchcom está diseñado para optimizar la gestión de proyectos dentro de una organización. Su objetivo principal es centralizar la planificación, el seguimiento y la administración de recursos, permitiendo a los equipos colaborar eficientemente y mantener el control de sus proyectos en tiempo real. A través de una interfaz intuitiva y herramientas de análisis detalladas, Switchcom ayuda a mejorar la productividad y facilita la toma de decisiones basadas en datos.
+    
+     ## Descripción del Proyecto
+     Switchcom es un sistema ERP diseñado para la gestión integral de proyectos. Facilita el seguimiento de tareas, administración de recursos y análisis de desempeño, proporcionando a los equipos de trabajo una plataforma centralizada y colaborativa.
+     ```
+
+### 2. **Capturas de Pantalla**
+
+   - ## Capturas de Pantalla
+     ![Página de Inicio](ruta/a/imagen_home.png)
+     ![Vista de Proyectos](ruta/a/imagen_proyectos.png)
+     ```
+
+### 3. **Guía de Uso / Funcionalidades Principales**
+   - **Objetivo**: Ayudar a los usuarios a entender cómo interactuar con la aplicación y qué funcionalidades están disponibles.
+     ```markdown
+     ## Guía de Uso
+     - **Gestión de Usuarios**: Crear, editar y eliminar usuarios con diferentes roles y permisos.
+     - **Control de Proyectos**: Crear proyectos, asignar tareas y realizar un seguimiento del progreso.
+     - **Reportes**: Generación de reportes personalizados en tiempo real.
+     ```
+
+### 4. **Roadmap**
+   - **Objetivo**: Indicar las características o mejoras planificadas para futuras versiones.
+     ```markdown
+     ## Roadmap
+     - [x] Implementar autenticación con Laravel Breeze.
+     - [ ] Añadir soporte para múltiples idiomas.
+     - [ ] Integrar notificaciones en tiempo real.
+     ```
+
+### 5. **Contribución**
+   - **Objetivo**: Explicar cómo otros desarrolladores pueden contribuir al proyecto.
+     ```markdown
+     ## Contribución
+     ¡Contribuciones son bienvenidas! Por favor, sigue estos pasos:
+     1. Haz un fork del repositorio.
+     2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+     3. Realiza tus cambios y haz commit (`git commit -am 'Agrega nueva funcionalidad'`).
+     4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
+     5. Abre un Pull Request.
+     ```
+
+### 6. **Licencia**
+   ## Licencia
+     Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
+     ```
+
+### 7. **Preguntas Frecuentes (FAQ)**
+   - **Objetivo**: Resolver dudas comunes que puedan surgir al usar o configurar la aplicación.
+   - **Ejemplo**:
+     ```markdown
+     ## FAQ
+     - **¿Qué versiones de Laravel son compatibles?**
+       - Switchcom es compatible con Laravel 9 y versiones posteriores.
+     - **¿Cómo cambio la configuración de idioma?**
+       - Puedes cambiar el idioma en el archivo de configuración `config/app.php`.
+     ```
